@@ -9,7 +9,7 @@ Select TWO Additional Features to Add
 [ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
+[ yes ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
 -->
 
@@ -49,9 +49,10 @@ background-attachment: fixed;
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height:650px;
   perspective: 1000px;
+  border: 5px dotted;
 }
 
 .flip-card-inner {
@@ -77,7 +78,7 @@ background-attachment: fixed;
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-image: url(https://images.genius.com/1a0e5c56809f077a3ce93260046cc640.1000x750x1.jpg);
   color: black;
 }
 
@@ -85,6 +86,28 @@ background-attachment: fixed;
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+}
+
+.beatles{
+color: brown;
+}
+
+.text{
+display: inline-block;
+width: 450px;
+margin: 3% auto;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+padding:0.5em;
+line-height:1.5em;
+background:rgb(143, 197, 185);
+}
+
+.title{
+  font-size: 2.4em;
+}
+
+.stuff{
+font-size: 1.2em;
 }
 
   </style>
@@ -95,13 +118,13 @@ background-attachment: fixed;
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <p class="caption">You're Invited to my...</p>
-      <p class="invite">Beatles Birthday Party</p>
+      <p class="caption text title">You're Invited to my...</p>
+      <br><p class="invite text title"><span class="beatles">Beatles</span> Birthday Party</p>
     </div>
     <div class="flip-card-back">
-      <h1>Tiger</h1> 
-      <p>A big cat from the forest</p> 
-      <p>Pretty stripes</p>
+      <p class="stuff"><span class="invite text">WHEN?</span> <br>April 8, 1968, 3:30 PM</p> 
+      <p class="stuff"><span class="invite text">WHERE?</span><br>The Cavern Club, Liverpool</p>
+      <img src="https://c.tenor.com/NzoSQyMc5bEAAAAC/beatles-birthday.gif">
     </div>
     </div>
  
